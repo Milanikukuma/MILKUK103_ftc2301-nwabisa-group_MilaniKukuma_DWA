@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tally Count</title>
+         <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css" />
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
+        <script src="./scripts.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <sl-alert variant="primary" duration="2000" closable class="alert-overview" data-key="alert-reset">
+                <sl-icon slot="icon" name="info-circle"></sl-icon>
+                <strong>Counter has been reset.</strong>
+            </sl-alert>
+            <h1 class="header-title">Tally Count</h1>
+        </header> 
+
+        <main class="main">
+            <div class="counter-1">
+                <input class="counter-value" data-key="number" readonly value="0">
+                <div class="counter-actions">
+                    <sl-button class="counter__btn subtract" data-key="subtract">-</sl-button>
+                    <sl-button class="counter__btn add" data-key="add">+</sl-button>
+                    <sl-button class="counter__btn reset" data-key="reset">Reset</sl-button>
+                </div>
+                
+            </div>
+            
+        </main>
+
+        <footer class="footer">
+            <p>Inspired by <a href="https://tallycount.app/" class="footer-link">Tally Count</a>. Note that this is merely a student practice project for learning JavaScript</p>
+        </footer>
+    </body>
+</html>
