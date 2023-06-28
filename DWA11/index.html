@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tally Counter</title>
+
+    <!-- Shoelace source for component use -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/themes/light.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/shoelace-autoloader.js"></script>
+    
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script src="script.js" defer type="module"></script>
+</head>
+<body> 
+    <header>
+        <h1>Tally Counter</h1>
+
+    <main>
+        
+        <p id="reset-message" hidden="true" style="text-align: center;">The counter has been reset</p>
+        <sl-progress-ring readonly value="0" data-key="number-value">0</sl-progress-ring>
+        
+
+        <div id="buttons">
+            <sl-button circle size="medium" variant="neutral" pill data-key="add">+</sl-button>
+            <sl-button circle size="medium" variant="neutral" pill data-key="subtract">-</sl-button>
+            <sl-button circle id="resetButton" variant="neutral" pill data-key="reset">reset</sl-button>
+        </div>
+    </main>
+
+    <footer>Inspired by <a href="https://tallycount.app/">Tally Count</a> webApp.</footer>
+</body>
+</html>
